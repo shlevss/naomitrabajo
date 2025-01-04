@@ -1,0 +1,347 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #004d60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra las opciones del menú */
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e6e6e6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007d99;
+}
+
+nav ul .dropdown {
+    position: relative;
+}
+
+nav ul .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #004d60;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul .dropdown .dropdown-content li {
+    margin: 0;
+}
+
+nav ul .dropdown .dropdown-content li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Section: Menu */
+.menu-section {
+    background-image: url('https://www.xtrafondos.com/wallpapers/tiburon-en-el-agua-3925.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 150px 20px; /* Aumenta el espacio vertical */
+    min-height: 100vh; /* Asegúrate de que ocupe toda la altura de la ventana */
+}
+
+.menu-section h1 {
+    font-size: 3rem; /* Haz el texto más grande para resaltar el título */
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.text-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumenta el espacio entre los cuadros de texto */
+    flex-wrap: wrap;
+}
+
+.text-box {
+    background-color: rgba(0, 77, 96, 0.9); /* Oscurece un poco más los cuadros */
+    padding: 30px; /* Amplía el relleno para mayor visibilidad */
+    border-radius: 15px; /* Redondea más las esquinas */
+    color: #ffffff;
+    font-size: 1.3rem;
+    width: 320px; /* Haz los cuadros un poco más anchos */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.text-box:hover {
+    transform: scale(1.05); /* Agrega un efecto de zoom al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Section: About */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.about-section img {
+    max-width: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .about-text {
+    max-width: 50%;
+}
+
+.about-section h1 {
+    color: #004d60;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Section: Offers */
+#offers {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+#offers h1 {
+    margin-bottom: 20px;
+    color: #004d60;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.offer-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.offer-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.offer-item p {
+    margin: 5px 0;
+    color: #333333;
+    font-size: 1rem;
+}
+
+.offer-item p:nth-child(3) {
+    color: #004d60;
+    font-weight: bold;
+}
+/* Section: Testimonios */
+.testimonials-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333333;
+}
+
+.testimonials-section h1 {
+    color: #004d60;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.testimonial-item p:nth-child(2) {
+    color: #004d60;
+    font-weight: bold;
+}
+/* Section: Contactos */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #e6f7ff;
+    color: #333333;
+    gap: 20px;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-left h2, .contact-right h2 {
+    color: #004d60;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-right .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-right .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #004d60;
+}
+
+.contact-right .form-group input,
+.contact-right .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-right button {
+    padding: 10px;
+    background-color: #004d60;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-right button:hover {
+    background-color: #007d99;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+}
